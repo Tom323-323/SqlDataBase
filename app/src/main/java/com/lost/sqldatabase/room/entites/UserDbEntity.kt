@@ -8,9 +8,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "accounts",indices = [Index("email", unique = true)])
 
-data class UserDbEntity {
+data class UserDbEntity (
     @PrimaryKey(autoGenerate = true) val id: Long,
-    @ColumnInfo(collate = ColumnInfo.NOCASE) val email: String,val user: String, val password: String)
+    @ColumnInfo(collate = ColumnInfo.NOCASE) val name: String,val age: Int)
 
 
-}
