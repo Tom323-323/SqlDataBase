@@ -6,7 +6,7 @@ import androidx.room.Index
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "accounts",indices = [Index("email", unique = true)])
+@Entity(tableName = "accounts",indices = [Index("name", unique = true)])
 
 data class UserDbEntity (
     @PrimaryKey(autoGenerate = true) val id: Long,

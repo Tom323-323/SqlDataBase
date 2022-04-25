@@ -13,5 +13,4 @@ interface UserDAO {
     @Insert
     fun saveName(nameUser:UserDbEntity)
 
-
 }
